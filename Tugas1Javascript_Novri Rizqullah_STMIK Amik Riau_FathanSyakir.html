@@ -1,0 +1,41 @@
+<script language="javascript">
+	var	pegawai = "Ridwan";
+	var jabatan = "Manager";
+	var status = "Menikah";
+
+	let gaji_pokok = 15000000;
+	let  tunjangan_jabatan = gaji_pokok*15/100;
+	let bpjs = gaji_pokok*10/100;
+	let tunjangan_keluarga = gaji_pokok*20/100;
+	let total_gaji = gaji_pokok+tunjangan_jabatan+bpjs+tunjangan_keluarga;
+
+if (jabatan=="Manager") {
+ gaji_pokok = 15000000;
+ tunjangan_jabatan = gaji_pokok*15/100;
+ bpjs = gaji_pokok*10/100;
+ tunjangan_keluarga = gaji_pokok*20/100;
+ total_gaji = gaji_pokok+tunjangan_jabatan+bpjs+tunjangan_keluarga;
+}
+else if (jabatan=="Asisten Manager") {
+ gaji_pokok = 10000000;
+ tunjangan_jabatan = gaji_pokok*15/100;
+ bpjs = gaji_pokok*10/100;
+ tunjangan_keluarga = gaji_pokok*20/100;
+ total_gaji = gaji_pokok+tunjangan_jabatan+bpjs+tunjangan_keluarga;
+}
+
+else if (jabatan=="Staff") {
+	 gaji_pokok = 5000000;
+ tunjangan_jabatan = gaji_pokok*15/100;
+ bpjs = gaji_pokok*10/100;
+ tunjangan_keluarga = gaji_pokok*20/100;
+ total_gaji = gaji_pokok+tunjangan_jabatan+bpjs+tunjangan_keluarga;
+}
+
+document.write("<h3 align='center'>Data Pegawai</h3>");
+document.write("<hr/>");
+document.write("<br/>Nama Pegawai: " +pegawai);
+document.write("<br/>Jabatan: " +jabatan);
+document.write("<br/>Status: " +status);
+document.write("<table align='center' border='1' cellpadding='10' cellspacing='0' width='40%'><thead bgcolor='tomato'><th>Data</th><th>Keterangan</th></thead> <tbody> <tr><td>Gaji Pokok</td> <td>"+gaji_pokok+"</td> </tr> <tr><td>Tunjangan Jabatan</td> <td>"+tunjangan_jabatan+"</td> </tr> <tr><td>BPJS</td> <td>"+bpjs+"</td> </tr> <tr><td>Tunjangan Keluarga</td> <td>"+tunjangan_keluarga+"</td> </tr></tbody> <tfoot bgcolor='khaki'><th> Total Gaji</th> <th> "+ total_gaji +"</th></tfoot></table> " );
+</script>
